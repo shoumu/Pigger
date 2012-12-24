@@ -1,0 +1,34 @@
+﻿<Page x:Class="Pigger.PageFolder.BudgetPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="305" d:DesignWidth="484"
+	Title="BudgetPage">
+
+    <Grid Margin="0,0,0,-11">
+        <ListView Name="budgetlist" HorizontalAlignment="Left" Height="255" Margin="0,62,0,0" VerticalAlignment="Top" Width="484">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="预算号" Width="70" DisplayMemberBinding="{Binding Id}"/>
+                    <GridViewColumn Header="年份" Width="80" DisplayMemberBinding="{Binding Year}"/>
+                    <GridViewColumn Header="月份" Width="80" DisplayMemberBinding="{Binding Month}"/>
+                    <GridViewColumn Header="收支类型" Width="80" DisplayMemberBinding="{Binding InOutName}"/>
+                    <GridViewColumn Header="账目类型" Width="80" DisplayMemberBinding="{Binding TypeName}"/>
+                    <GridViewColumn Header="金额" Width="80" DisplayMemberBinding="{Binding Money}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Label Content="收支类型" HorizontalAlignment="Left" Margin="10,8,0,0" VerticalAlignment="Top"/>
+        <ComboBox Name="inout" HorizontalAlignment="Left" Margin="88,10,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="账目类型" HorizontalAlignment="Left" Margin="10,32,0,0" VerticalAlignment="Top"/>
+        <ComboBox Name="acctypeName" HorizontalAlignment="Left" Margin="88,37,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="年份" HorizontalAlignment="Left" Margin="227,10,0,0" VerticalAlignment="Top"/>
+        <ComboBox Name="year" HorizontalAlignment="Left" Margin="276,10,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="月份" HorizontalAlignment="Left" Margin="227,35,0,0" VerticalAlignment="Top" />
+        <ComboBox Name="month" HorizontalAlignment="Left" Margin="276,36,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button Name="fileter" Content="筛选" HorizontalAlignment="Left" Margin="409,10,0,0" VerticalAlignment="Top" Width="65" Height="47" Click="fileter_Click"/>
+
+    </Grid>
+</Page>

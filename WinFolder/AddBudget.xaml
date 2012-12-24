@@ -1,0 +1,21 @@
+﻿<Window x:Class="Pigger.WinFolder.AddBudget"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="AddBudget" Height="320" Width="220" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label Content="添加预算" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0" FontSize="14"/>
+        <Label Content="年份" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,43,0,0"/>
+        <ComboBox Name="year" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="76,47,0,0"/>
+        <Label Content="月份" HorizontalAlignment="Left" Margin="10,82,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.489,0.454"/>
+        <ComboBox Name="month" HorizontalAlignment="Left" Margin="76,86,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="收支类型" HorizontalAlignment="Left" Margin="10,122,0,0" VerticalAlignment="Top"/>
+        <ComboBox Name="inout" HorizontalAlignment="Left" Margin="76,126,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="账目类型" HorizontalAlignment="Left" Margin="10,161,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.481,0.371"/>
+        <ComboBox Name="accType" HorizontalAlignment="Left" Margin="76,165,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="金额" HorizontalAlignment="Left" Margin="10,201,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="money" HorizontalAlignment="Left" Height="23" Margin="76,203,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button Name="add" Content="添加" HorizontalAlignment="Left" Margin="10,249,0,0" VerticalAlignment="Top" Width="75" Click="add_Click"/>
+        <Button Name="cancel" Content="取消" HorizontalAlignment="Left" Margin="121,249,0,0" VerticalAlignment="Top" Width="75" Click="cancel_Click"/>
+
+    </Grid>
+</Window>

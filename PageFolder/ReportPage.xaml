@@ -1,0 +1,38 @@
+﻿<Page x:Class="Pigger.PageFolder.ReportPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+      d:DesignHeight="348" d:DesignWidth="492"
+	Title="ReportPage">
+
+    <Grid>
+
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="249" Margin="20,72,0,0" VerticalAlignment="Top" Width="199"/>
+
+        <Border BorderBrush="Gray" BorderThickness="1" HorizontalAlignment="Left" Height="45" Margin="20,10,0,0" VerticalAlignment="Top" Width="462"/>
+
+        <Label Content="月度财务报告" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="58,81,0,0" FontSize="20" FontFamily="Playbill" FontWeight="Bold"/>
+        <Label Content="本月收入预算" HorizontalAlignment="Left" Margin="55,128,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="budin" Content="0" HorizontalAlignment="Left" Margin="161,128,0,0" VerticalAlignment="Top"/>
+        <Label Content="本月支出预算" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="55,158,0,0"/>
+        <Label x:Name="budout" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="161,158,0,0"/>
+        <Label Content="本月实际收入" HorizontalAlignment="Left" Margin="55,188,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="accin" Content="0" HorizontalAlignment="Left" Margin="161,188,0,0" VerticalAlignment="Top"/>
+        <Label Content="本月实际支出" HorizontalAlignment="Left" Margin="55,218,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="accout" Content="0" HorizontalAlignment="Left" Margin="161,218,0,0" VerticalAlignment="Top"/>
+        <Label Content="本月实际结余" HorizontalAlignment="Left" Margin="55,248,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="remain" Content="0" HorizontalAlignment="Left" Margin="161,248,0,0" VerticalAlignment="Top"/>
+        <Label Content="年份" HorizontalAlignment="Left" Margin="29,21,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="year" HorizontalAlignment="Left" Margin="78,21,0,0" VerticalAlignment="Top" Width="100"/>
+        <Label Content="月份" HorizontalAlignment="Left" Margin="206,21,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="month" HorizontalAlignment="Left" Margin="255,21,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button x:Name="see" Content="查看" HorizontalAlignment="Left" Margin="395,21,0,0" VerticalAlignment="Top" Width="75" Height="21" Click="see_Click"/>
+        <Label Content="结算日期" HorizontalAlignment="Left" Margin="58,278,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="date" Content="0" HorizontalAlignment="Left" Margin="121,278,0,0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="255,72,0,0" TextWrapping="Wrap" Text="       唉，看了这个财务报告是否又有各种各样的想法了呢，亲。看来要掌握好自己的财务状况不是一件容易的事情啊。不过不要紧，从现在起，你就坚持使用Pigger系统吧。将为你带来前所未有的便利。也将成为你忠诚的钱包助手。" VerticalAlignment="Top" Height="111" Width="215"/>
+        <Image Source="C:\Users\永强\Desktop\数据库\resource\pig1.png" HorizontalAlignment="Left" Height="115" Margin="264,188,0,0" VerticalAlignment="Top" Width="189"/>
+
+    </Grid>
+</Page>
